@@ -8,13 +8,13 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      : "需要[验证](/#/auth)您是人类，请前往验证。",
   },
   Auth: {
-    Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Title: "验证您是人类",
+    Tips: "请在下方输入778732以完成验证",
     SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
-    Input: "在此处填写访问码",
+    Input: "在此处填写验证码",
     Confirm: "确认",
     Later: "稍后再说",
   },
@@ -461,7 +461,9 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `欢迎使用苏淋の助手，您使用的是免费版本，模型可能回复较慢，或者可能有无法预料的错误出现。
+如果您对论文，AI绘画，编程，识图以及响应速度等有特殊需求，请使用我们的[高级模型](https://chat.suaolin.one/ "高级模型")，高级模型包括AI绘画，更高级的多模态模型，识图，编程，高速响应等，价格低于大多数的同行。使用的都是纯原的模型，质量可以保证。
+今天可以帮您什么呢？`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
