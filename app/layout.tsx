@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "您的智能机器人助手。",
   appleWebApp: {
     title: "苏淋の助手",
-    statusBarStyle: "您的智能机器人助手。",
+    statusBarStyle: "default",
   },
 };
 
